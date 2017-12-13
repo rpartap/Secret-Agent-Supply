@@ -5,23 +5,52 @@ html {
 body {
   color: white;
   font-family: Helvetica;
+  margin: 0;
+  background-color: black;
+}
+
+div {
+  display: block;
 }
 
 /*header section*/
 header {
-  display: inline-flex;
+  display: flex;
   height: 2.32rem;
   width: 960px;
   background-color: black;
+  padding: 12px 0px 12px 0.5rem;
+  flex-direction: row;
+  align-items: center;
 }
 
-.logo {
+.logo img {
+  display: inline-flex;
   padding-left: 0.5rem;
+  height: 1.5rem;
+  padding-top: 0.33rem;
+  margin-left: 100px;
 }
 
-.company {
+.company h1 {
+  display: inline-flex;
+  align-items: center;
   font-size: 1rem;
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
   padding-left: 1rem;
+}
+
+/*banner section*/
+
+.banner {
+
+}
+
+.banner-image {
+
+}
+
+.banner-text {
+  
 }
