@@ -1,0 +1,27 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  color: white;
+  font-family: Helvetica;
+}
+
+/*header section*/
+header {
+  display: inline-flex;
+  height: 2.32rem;
+  width: 960px;
+  background-color: black;
+}
+
+.logo {
+  padding-left: 0.5rem;
+}
+
+.company {
+  font-size: 1rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  padding-left: 1rem;
+}
