@@ -53,11 +53,44 @@ header {
   height: 25rem;
 }
 
-.banner-image {
-  height: 25rem;
-
+.banner-text {
+  background-color: black;
+  width: 20rem;
+  margin-left: 175px;
+  margin-right: 175px;
 }
 
-.banner-text {
+.text {
+  padding: 2rem 3rem
+}
 
+.text h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+}
+
+.text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/*navigation section*/
+
+.navigation {
+  display: flex;
+  height: 2.5rem;
+  background-color: firebrick;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-bar {
+  display: flex;
+  margin-left: : 175px;
+  margin-right: 175px;
+}
+
+.navigation a {
+  color: white;
 }
