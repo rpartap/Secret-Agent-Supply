@@ -6,7 +6,7 @@ body {
   color: white;
   font-family: Helvetica;
   margin: 0;
-  background-color: black;
+  background-color: white;
 }
 
 div {
@@ -17,7 +17,6 @@ div {
 header {
   display: flex;
   height: 2.32rem;
-  width: 960px;
   background-color: black;
   padding: 12px 0px 12px 0.5rem;
   flex-direction: row;
@@ -29,7 +28,7 @@ header {
   padding-left: 0.5rem;
   height: 1.5rem;
   padding-top: 0.33rem;
-  margin-left: 175px;
+  margin-left: 300px;
 }
 
 .company h1 {
@@ -55,8 +54,8 @@ header {
 
 .banner-text {
   background-color: black;
-  width: 20rem;
-  margin-left: 175px;
+  width: 25rem;
+  margin-left: 300px;
   margin-right: 175px;
 }
 
@@ -67,7 +66,7 @@ header {
 .text h2 {
   font-size: 1rem;
   font-weight: bold;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.75rem;
 }
 
 .text h1 {
@@ -90,6 +89,8 @@ header {
   padding: 0.75em 0;
   margin-left: 175px;
   margin-right: 175px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .navigation a {
@@ -99,43 +100,40 @@ header {
 /*products*/
 
 .container {
-  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
   background-color: white;
 }
 
 .products {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 0 0;
   background-color: white;
-  max-width: 960px;
-  max-height: 285px;
-  margin: 0 auto;
-  margin-top: 54px;
 }
 
-.pen img, .watch img, .glasses img {
-  display: block;
-  height: 9rem;
+.item {
   width: 30%;
+}
+
+.image {
   border: 4px solid black;
+  height: 9rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+img {
+  max-width: 8em;
 }
 
 .description {
   display: block;
   background-color: black;
   color: white;
+  padding: 0.5rem;
   text-align: center;
-  padding: 0.5em;
-}
-
-.pen {
-
-}
-
-.watch {
-
-}
-
-.glasses {
-
 }
