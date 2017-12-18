@@ -1,132 +1,98 @@
 html {
   font-size: 18px;
-}
-
-body {
-  color: white;
-  font-family: Helvetica;
-  margin: 0;
   background-color: white;
 }
 
-div {
-  display: block;
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4em;
 }
 
-/*header section*/
-header {
-  display: flex;
-  height: 2.32rem;
-  background-color: black;
-  padding: 12px 0px 12px 0.5rem;
-  flex-direction: row;
-  align-items: center;
-}
+.company {
+    background-color: black;
+    color: white;
+  }
 
-.logo img {
-  display: inline-flex;
-  padding-left: 0.5rem;
-  height: 1.5rem;
-  padding-top: 0.33rem;
-  margin-left: 300px;
-}
-
-.company h1 {
-  display: inline-flex;
-  align-items: center;
-  font-size: 1rem;
-  padding-top: 0.66rem;
-  padding-bottom: 0.66rem;
-  padding-left: 1rem;
-}
-
-/*banner section*/
-
-.banner {
+.company .container {
   display: flex;
   align-items: center;
-  background-image: url("../images/mainbanner.jpeg");
+  padding: 12px 0 12px 0.5em;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+.company img {
+  height: 1.5em;
+  padding-right: 15px;
+}
+
+.main-banner {
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 25rem;
+  height: 25em;
 }
 
-.banner-text {
+.headline {
   background-color: black;
-  width: 25rem;
-  margin-left: 300px;
-  margin-right: 175px;
+  color: white;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
 }
 
-.text {
-  padding: 2rem 3rem
-}
-
-.text h2 {
-  font-size: 1rem;
-  font-weight: bold;
-  padding-bottom: 0.75rem;
-}
-
-.text h1 {
-  font-size: 2rem;
+h1, h4 {
   font-weight: bold;
 }
 
-/*navigation section*/
+.headline h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
 
-.navigation {
-  display: block;
-  height: 2.5rem;
+nav {
   background-color: firebrick;
+  color: white;
 }
 
-.nav-bar {
+nav ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.75em 0;
-  margin-left: 175px;
-  margin-right: 175px;
-  max-width: 960px;
-  margin: 0 auto;
+  list-style: none;
 }
 
-.navigation a {
-  color: white;
+.mobile-nav {
+  display: none;
 }
 
-/*products*/
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: white;
-}
-
-.products {
+.products, .business-info {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0 0 0;
-  background-color: white;
+  margin: 3em 0 0 0;
 }
 
-.item {
-  width: 30%;
+.product {
+  width: 30%
 }
 
-.image {
+.product-image {
   border: 4px solid black;
-  height: 9rem;
-  padding: 2rem 0;
+  padding: 2em 0;
+  height: 9em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
 }
 
-img {
+.product-image img {
   max-width: 8em;
 }
 
@@ -134,6 +100,92 @@ img {
   display: block;
   background-color: black;
   color: white;
-  padding: 0.5rem;
   text-align: center;
+  padding: 0.5em;
+}
+
+.info {
+  width: 35%;
+}
+
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5em 0;
+  margin-top: 4em;
+}
+
+/*media*/
+
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product.watch {
+    display: none;
+  }
+
+.products, .business-info {
+  flex-wrap: wrap;
+}
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5em auto;
+
+  }
+  .main-banner {
+    height: 15rem;
+  }
+
+  .headline {
+    margin-top: 10rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .headline h1 {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .headline h4 {
+    font-family: Helvetica;
+    font-size: .77rem;
+    font-weight: bold;
+  }
+
 }
